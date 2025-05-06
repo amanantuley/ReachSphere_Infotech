@@ -5,6 +5,140 @@
     --light: #F7FAFF;
     --dark: #1D1D27;
 }
+/* Styling for the 'Why ReachSphere Infotech' Section */
+#why-us {
+    background-color: #f4f4f9;
+    padding: 60px 0;
+}
+
+#why-us .section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+#why-us .section-title p {
+    font-size: 1.25rem;
+    color: #7f8c8d;
+}
+
+.card {
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+    transform: translateY(-10px);
+}
+
+.card .card-body i {
+    color: #3498db;
+}
+
+.card-title {
+    font-size: 1.25rem;
+    font-weight: bold;
+    color: #2d3436;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #7f8c8d;
+}
+
+/* Equal Height for Cards */
+.card.h-100 {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+@media (max-width: 576px) {
+    #why-us .section-title h2 {
+        font-size: 2rem;
+    }
+
+    #why-us .section-title p {
+        font-size: 1.125rem;
+    }
+}
+
+/* Animations for elements */
+.wow {
+    visibility: hidden;
+}
+
+.wow.fadeInUp {
+    animation-name: fadeInUp;
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+[data-wow-delay="0.1s"] {
+    animation-delay: 0.1s;
+}
+
+[data-wow-delay="0.2s"] {
+    animation-delay: 0.2s;
+}
+
+[data-wow-delay="0.3s"] {
+    animation-delay: 0.3s;
+}
+
+[data-wow-delay="0.4s"] {
+    animation-delay: 0.4s;
+}
+
+[data-wow-delay="0.5s"] {
+    animation-delay: 0.5s;
+}
+
+[data-wow-delay="0.6s"] {
+    animation-delay: 0.6s;
+}
+
+
+
+
+/* Our Clients Section */
+#our-clients {
+    background-color: #f4f4f9;
+    padding: 60px 0;
+}
+
+#our-clients .carousel-inner {
+    padding: 20px 0;
+}
+
+#our-clients .carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#our-clients .carousel-item img {
+    margin: 0 20px;
+}
+
+.carousel-control-prev, .carousel-control-next {
+    color: #3498db;
+}
+
+.carousel-control-prev-icon, .carousel-control-next-icon {
+    background-color: #3498db;
+}
 
 
 /*** Spinner ***/
